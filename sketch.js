@@ -91,14 +91,14 @@ function draw() {
         fill(255)
 
         // draw the data
-        let i = 0
-        while (i < positions.length - 1) {
-            ellipse(positions[i][0], positions[i][1], 4, 4)
-            text(i, positions[i][0], positions[i][1])
-            line(positions[i][0], positions[i][1], positions[i+1][0], positions[i+1][1])
+        // let i = 0
+        // while (i < positions.length - 1) {
+        //     ellipse(positions[i][0], positions[i][1], 4, 4)
+        //     text(i, positions[i][0], positions[i][1])
+        //     line(positions[i][0], positions[i][1], positions[i+1][0], positions[i+1][1])
 
-            i += 1
-        }
+        //     i += 1
+        // }
 
         let noseX = positions[62][0]
         let l_lip_x = positions[44][0]
@@ -116,7 +116,7 @@ function draw() {
         // r m 50 - 5
         // u t 60
         // d 57 
-        print(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y));
+        // print(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y));
         if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 50) {
             let size = dist(l_lip_x, l_lip_y, r_lip_x, r_lip_y)/7;
             start_y = positions[50][1];
