@@ -113,9 +113,9 @@ function draw() {
         let d_lip_x = positions[57][0]
         let d_lip_y = positions[57][1]
         //l m 44
-        r m 50 - 5
-        u t 60
-        d 57 
+        // r m 50 - 5
+        // u t 60
+        // d 57 
         print(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y));
         if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 20) {
             calcWave();
