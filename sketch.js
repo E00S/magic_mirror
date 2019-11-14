@@ -4,9 +4,9 @@ let tracker
 // --- 
 let xspacing = 16; // Distance between each horizontal location
 let w; // Width of entire wave
-let theta = 180.0; // Start angle at 0
-let amplitude = 30.0; // Height of wave
-let period = 200.0; // How many pixels before the wave repeats
+let theta = 0.0; // Start angle at 0
+let amplitude = 20.0; // Height of wave
+let period = 100.0; // How many pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
 let old_x = 0;
