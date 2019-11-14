@@ -16,17 +16,6 @@ let Y = 0;
 let start_x;
 let start_y;
 let a = 0;
-let l_lip_x;
-let l_lip_y;
-
-let r_lip_x;
-let r_lip_y;
-
-let u_lip_x;
-let u_lip_y;
-
-let d_lip_x;
-let d_lip_y;
 //---  
 
 function setup() {
