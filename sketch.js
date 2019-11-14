@@ -21,7 +21,7 @@ let a = 0;
 function setup() {
 
     createCanvas(800, 800)
-    print('VErsion: 1');
+    print('VErsion: 2');
 
     // start capturing video
     capture = createCapture(VIDEO)
@@ -116,6 +116,7 @@ function draw() {
     //r m 50 - 5
     //u t 60
     //d 57 
+    print(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y));
     if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 20) {
         calcWave();
         renderWave(0, 'red'); //red
