@@ -21,7 +21,7 @@ let a = 0;
 function setup() {
 
     createCanvas(800, 800)
-    print('VErsion: 3');
+    print('VErsion: 4');
 
     // start capturing video
     capture = createCapture(VIDEO)
@@ -55,10 +55,10 @@ function calcWave() {
     }
 }
 
-function renderWave(a, color) {
+function renderWave(a, color, b) {
     push();
     stroke(color);
-    strokeWeight(30);
+    strokeWeight(b);
     old_x = start_y + 0 * xspacing;
     old_y = start_x + a + yvalues[0];
     // A simple way to draw the wave with an ellipse at each location
@@ -117,15 +117,18 @@ function draw() {
         // u t 60
         // d 57 
         print(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y));
-        if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 20) {
+        if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 40) {
+            let size = dist(l_lip_x, l_lip_y, r_lip_x, r_lip_y)/6;
+            start_y = dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) + u_lip_y;
+            start_x = l_lip_x + 5;
             calcWave();
-            renderWave(0, 'red'); //red
-            renderWave(30, 'orange'); //orange
-            renderWave(60, 'yellow'); //yellow
-            renderWave(90, 'green'); //green
-            renderWave(120, 'lightblue'); //light_blue
-            renderWave(150, 'blue'); //blue
-            renderWave(180, 'purple'); //purple
+            renderWave(0, 'red', size); //red
+            renderWave(size, 'orange', size); //orange
+            renderWave(size * 2, 'yellow', size); //yellow
+            renderWave(size * 3, 'green', size); //green
+            renderWave(size * 4, 'lightblue', size); //light_blue
+            renderWave(size * 5, 'blue', size); //blue
+            renderWave(size * 6, 'purple', size); //purple
         }  
     }
 }
