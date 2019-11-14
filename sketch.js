@@ -101,30 +101,30 @@ function draw() {
         }
     }
     // let noseX = positions[62][0]
-    // let l_lip_x = positions[44][0];
-    // let l_lip_y = positions[44][1];
+    let l_lip_x = positions[44][0];
+    let l_lip_y = positions[44][1];
 
-    // let r_lip_x = positions[50][0] - 5;
-    // let r_lip_y = positions[50][1];
+    let r_lip_x = positions[50][0] - 5;
+    let r_lip_y = positions[50][1];
 
-    // let u_lip_x = positions[60][0];
-    // let u_lip_y = positions[60][1];
+    let u_lip_x = positions[60][0];
+    let u_lip_y = positions[60][1];
 
-    // let d_lip_x = positions[57][0];
-    // let d_lip_y = positions[57][1];
-    // //l m 44
-    // //r m 50 - 5
-    // //u t 60
-    // //d 57 
-    // if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 20) {
-    //     calcWave();
-    //     renderWave(0, 'red'); //red
-    //     renderWave(30, 'orange'); //orange
-    //     renderWave(60, 'yellow'); //yellow
-    //     renderWave(90, 'green'); //green
-    //     renderWave(120, 'lightblue'); //light_blue
-    //     renderWave(150, 'blue'); //blue
-    //     renderWave(180, 'purple'); //purple
-    // }  
+    let d_lip_x = positions[57][0];
+    let d_lip_y = positions[57][1];
+    //l m 44
+    //r m 50 - 5
+    //u t 60
+    //d 57 
+    if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 20) {
+        calcWave();
+        renderWave(0, 'red'); //red
+        renderWave(30, 'orange'); //orange
+        renderWave(60, 'yellow'); //yellow
+        renderWave(90, 'green'); //green
+        renderWave(120, 'lightblue'); //light_blue
+        renderWave(150, 'blue'); //blue
+        renderWave(180, 'purple'); //purple
+    }  
 }
 
