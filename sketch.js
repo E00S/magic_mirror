@@ -21,6 +21,7 @@ let a = 0;
 function setup() {
 
     createCanvas(800, 800)
+    print('VErsion: 1');
 
     // start capturing video
     capture = createCapture(VIDEO)
