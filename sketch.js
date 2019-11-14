@@ -21,7 +21,7 @@ let a = 0;
 function setup() {
 
     createCanvas(800, 800)
-    print('VErsion: 4');
+    print('VErsion: 5');
 
     // start capturing video
     capture = createCapture(VIDEO)
@@ -117,7 +117,7 @@ function draw() {
         // u t 60
         // d 57 
         print(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y));
-        if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 40) {
+        if(dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) > 50) {
             let size = dist(l_lip_x, l_lip_y, r_lip_x, r_lip_y)/6;
             start_y = dist(u_lip_x, u_lip_y, d_lip_x, d_lip_y) + u_lip_y;
             start_x = l_lip_x + 5;
