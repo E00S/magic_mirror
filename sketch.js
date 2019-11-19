@@ -5,8 +5,8 @@ let tracker
 let xspacing = 16; // Distance between each horizontal location
 let w; // Width of entire wave
 let theta = 0.0; // Start angle at 0
-let amplitude = 20.0; // Height of wave
-let period = 50.0; // How many pixels before the wave repeats
+let amplitude = 10.0; // Height of wave
+let period = 150.0; // How many pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
 let old_x = 0;
@@ -89,16 +89,6 @@ function draw() {
 
         stroke(255)
         fill(255)
-
-        // draw the data
-        // let i = 0
-        // while (i < positions.length - 1) {
-        //     ellipse(positions[i][0], positions[i][1], 4, 4)
-        //     text(i, positions[i][0], positions[i][1])
-        //     line(positions[i][0], positions[i][1], positions[i+1][0], positions[i+1][1])
-
-        //     i += 1
-        // }
 
         let noseX = positions[62][0]
         let l_lip_x = positions[44][0]
